@@ -71,3 +71,8 @@ Tambahan perintah `bin/bash /etc/init.d/shutDown` sebelum baris terkahir `exit 0
     bin/bash /etc/init.d/shutDown
     
     exit 0
+    
+Perhatian
+---------
+Apabila sudah mengaktifkan fitur Autorun StartUp, maka pastikan setiap kali menghidupkan Raspberry Pi, pada pin 7 selalu terhubung ke rangkaian Switch. Jika tidak, maka Raspberry Pi akan otomatis mati setelah beberapa saat masuk ke Desktop.
+Hal ini dikarenakan state dari Pin 7 yang mengambang dan program akan menganggap adanya penekanan tombol shutdown.
