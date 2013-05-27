@@ -1,0 +1,27 @@
+#!/bin/bash
+ 
+PATH=/usr/bin:/home/pi/wiringPi/gpio
+
+gpio -g mode 7 in
+gpio -g write 7 1
+
+COUNTER=0
+
+while [ 1 ]; do
+  if [ "$(/home/pi/wiringPi/gpio/gpio -g read 7)" = "0" ]; then
+		if [ "$COUNTER" -ge "10" ]
+		 then
+			sudo halt
+			break
+		else
+			echo $COUNTER
+			COUNTER=$((COUNTER+1))
+		fi
+	else
+		COUNTER=0
+		echo $COUNTER
+	fi
+	sudo sleep 0.5
+done
+
+exit 0
