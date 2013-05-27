@@ -17,7 +17,7 @@ Download and Install
 `git clone git://github.com/InnovativeElectronics/RaspberryPi-autoShutDown.git`
 
 Setelah proses download selesai, maka di lokasi `/home/pi/` terdapat folder `RasberryPi-autoShutDown`.
-Kemudian copy file shutDown ke dalam folder `/etc/init.d/` :
+Kemudian copy file shutDown ke dalam folder `/etc/init.d/`:
 
   cd /home/pi/RasberryPi-autoShutDown
   sudo cp shutDown /etc/init.d/
