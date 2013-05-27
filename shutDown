@@ -14,12 +14,12 @@ while [ 1 ]; do
 			sudo halt
 			break
 		else
-			echo $COUNTER
+			#echo $COUNTER
 			COUNTER=$((COUNTER+1))
 		fi
 	else
 		COUNTER=0
-		echo $COUNTER
+		#echo $COUNTER
 	fi
 	sudo sleep 0.5
 done
