@@ -21,6 +21,13 @@ Kemudian copy file shutDown ke dalam folder `/etc/init.d/`:
 
   cd /home/pi/RasberryPi-autoShutDown
   sudo cp shutDown /etc/init.d/
+  
+Include the following in the header block:
+
+    # Procfile -- supporting daemons
+    #
+    # * Ensure you've done a `bundle install`
+    # * run `foreman start [process name]`
 
 
 
